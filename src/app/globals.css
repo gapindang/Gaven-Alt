@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gaven-bg: #0D0D0D;
+  --color-gaven-surface: #151515;
+  --color-gaven-surface-hover: #1e1e1e;
+  --color-gaven-primary: #F2F0EA;
+  --color-gaven-secondary: #9A9892;
+  --color-gaven-muted: #5F5D59;
+  --color-gaven-accent: #C8A96B;
+  --color-gaven-accent-hover: #d8b97b;
+  --color-gaven-border: rgba(242, 240, 234, 0.08);
+
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+:root {
+  --background: #0D0D0D;
+  --foreground: #F2F0EA;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #F2F0EA;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #C8A96B;
+  selection-color: #0D0D0D;
+}
+
+::selection {
+  background-color: #C8A96B;
+  color: #0D0D0D;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}

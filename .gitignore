@@ -1,0 +1,59 @@
+# ============================================================
+# GAVEN — .gitignore
+# ============================================================
+
+# --- Dependencies ---
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# --- Next.js build output ---
+/.next/
+/out/
+/build
+
+# --- Testing ---
+/coverage
+
+# --- Environment Variables (NEVER commit these) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Keep the example template (safe to commit — no real secrets)
+!.env.local.example
+
+# --- Supabase ---
+# Schema SQL is safe to commit (no secrets, just structure)
+# DO NOT commit supabase/config.toml if it contains secrets
+supabase/.branches
+supabase/.temp
+
+# --- OS / Editor ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+*.pem
+
+# --- Debug / Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# --- Vercel ---
+.vercel
+
+# --- TypeScript ---
+*.tsbuildinfo
+next-env.d.ts
