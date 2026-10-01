@@ -28,6 +28,9 @@
 .env.production.local
 # Keep the example template (safe to commit — no real secrets)
 !.env.local.example
+.AGENTS.md
+.CLAUDE.md
+.GAVEN_PRD.md
 
 # --- Supabase ---
 # Schema SQL is safe to commit (no secrets, just structure)
